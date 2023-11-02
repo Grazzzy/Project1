@@ -1,21 +1,22 @@
-// Assume you have an array of trending keywords
-const trendingKeywords = ['sustainability', 'climate change', 'green energy', 'recycling', /*...*/];
+/**
+ * Created by ccania.
+ */
+var para = document.querySelectorAll(".ellipsis");
 
-// Function to create and display the word cloud
-function createWordCloud() {
-    const wordcloudContainer = document.getElementById('wordcloud-container');
+for (var i = 0; i < para.length; i++) {
+    var paraTxt = para[i].innerHTML;
 
-    // Create a div for each keyword and set its size based on popularity
-    trendingKeywords.forEach(keyword => {
-        const wordDiv = document.createElement('div');
-        wordDiv.textContent = keyword;
-        // Adjust the size based on the popularity of the keyword
-        // You might need additional logic here based on your data
-        const fontSize = Math.floor(Math.random() * 20) + 10;
-        wordDiv.style.fontSize = `${fontSize}px`;
-        wordcloudContainer.appendChild(wordDiv);
-    });
+    if (paraTxt.length > 200) {
+
+        var newPara = document.createElement("p"); //create new paragraph element
+        newPara.className = "ellipsis-trunc";
+        var newParaTxt = document.createTextNode(paraTxt.substring(0,200)+"...");
+        //create new text node
+
+        newPara.appendChild(newParaTxt); //bind new text node to new element
+        para[i].replaceWith(newPara);
+
+    } else {
+        console.log("I've got nothing");
+    }
 }
-
-// Call the function to create and display the word cloud
-createWordCloud();
