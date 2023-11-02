@@ -1,0 +1,134 @@
+body{
+    background-color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: Manrope;
+  }
+  
+  .container{
+    display: flex;
+    flex-direction: column;
+  } 
+  
+  /* nav bar */
+  .navbar {
+    display: flex;
+    color: #F9FAF8;
+    background-color: #2D4356;
+    padding: 20px 0px 20px 100px;
+    align-items: center;
+  }
+   
+  .header-link {
+    display: flex;
+    margin-left: auto;
+    padding: 0px 100px 0px 0px;  
+  }
+  
+  .header-link a {
+    text-decoration: none;
+    color: #E5E7EB;
+    font-size: 18px;
+    padding: 10px;
+  }
+  
+  
+  /* Hero */
+  
+   .hero{
+    background-color: #FFFFFF;
+    display: flex;
+    color: #2D4356;
+    align-items: center;
+    justify-content: center;
+    padding: 90px;
+  }
+
+  
+  
+  .hero-cta {
+    flex-basis: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-right: 50px;
+  }
+  
+  .hero-cta p {
+    color: #F9FAF8; 
+    opacity: 0.7;
+  }
+  
+  
+  h1{
+    font-size: 48px;
+    font-weight: bold;
+    color: #2D4356;
+    margin: 0;
+  }
+  
+  
+  /* .hero-image img{
+    max-width: 70%;
+    max-height: 70%;
+    border-radius: 10px;
+    }
+     */
+
+    /* Content */
+   .content{
+    align-items: left;
+  }
+  
+  .content-info{
+    background-color: #2D4356;
+    color: #F9D7CD;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+   }
+
+   .bx-content-3{
+    width: 100%; 
+    height: 100%; 
+    background: #607EAA
+   }
+
+   .options-container{
+    display: flex;
+   }
+
+  .options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #2746f8;
+    border-radius: 4px;
+    color: #2746f8;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    cursor: pointer;
+    flex: 1;
+    font-family: Poppins;
+}
+
+.About{
+  background-color: #F9F5E8
+
+}
+  .footer{
+    background-color: #1F2937;
+    color: #FFFFFF;
+  
+  }
+  
+  h2 h4{
+    color:#2D4356;
+  }
+
